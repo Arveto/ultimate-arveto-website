@@ -1,0 +1,124 @@
+/* Replacement colors */
+
+:root{
+    --arveto-green: #85a727;
+}
+
+.arveto-green{
+    color: var(--arveto-green) !important;
+}
+
+.arveto-green-hover:hover{
+    color: var(--arveto-green) !important;
+}
+
+
+.arveto-green-bg{
+    background-color: var(--arveto-green) !important;
+    color: white;
+}
+
+.arveto-transparent-bg{
+    background: rgba(0, 0, 0, 0) !important;
+    color: white;
+}
+
+
+.arveto-green-active{
+    border-bottom-color: #85a727 !important;
+    color: white;
+}
+
+
+/*Hero*/
+
+#hero{
+    background-image: url(../images/hero_background.jpg);
+    background-size: cover;
+}
+
+#header{
+    z-index: 1;
+    padding: 5px;
+}
+
+.clickable:hover{
+    cursor: pointer;
+}
+
+
+/*Header*/
+
+.fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.content {
+    margin-top: 86px;
+}
+
+
+/*Content*/
+
+#fonctionnement-title, #competences-title, #equipe-title{
+    font-size: : 36px;
+    padding-top: 40px;
+    margin: 0 !important;
+}
+
+#icon1{
+    color: #084c61;
+}
+
+#icon2{
+    color: #084c61;
+}
+
+#icon3{
+    color: #084c61;
+}
+
+.paragraph{
+    padding-top: 15px;
+}
+
+#fonctionnement-title{
+    margin-top: 57px;
+}
+
+#cards{
+    padding: 40px;
+}
+
+#equipe-title{
+    margin-top: 60px;
+}
+
+
+#footer{
+    color: white;
+    background: linear-gradient(135deg, #343434, #262626);;
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    padding-bottom: 35px;
+    padding-top: 50px;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+
+#links{
+    color: white;
+}
+
+.footer-icon{
+    margin: 15px;
+    color: white;
+}
+
+#legal{
+    margin-top: 50px;
+}
