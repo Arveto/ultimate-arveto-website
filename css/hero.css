@@ -72,3 +72,28 @@ footer li:before {
   margin-left: -1.5em;
   color: #147efb;
 }
+
+.subtitle_competence {
+
+  font-size: 12px;
+}
+
+.coordonnees{
+
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.photo{
+
+  height: 15em;
+  width: 15em;
+  vertical-align: top;
+}
+
+.citation{
+
+  font-style: italic;
+  font-weight: bold; 
+  font-size: 20px; 
+}
