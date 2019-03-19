@@ -7,4 +7,12 @@
         burger.classList.toggle('is-active');
         menu.classList.toggle('is-active');
     });
+
+
+    var burger2 = document.querySelector('#navbarBurger');
+    var menu2 = document.querySelector('#'+burger2.dataset.target);
+    burger2.addEventListener('click', function() {
+        burger2.classList.toggle('is-active');
+        menu2.classList.toggle('is-active');
+    });
 })();
