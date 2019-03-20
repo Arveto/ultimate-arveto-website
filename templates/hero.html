@@ -6,13 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Arveto Ink.</title>
         <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <!-- Bulma Version 0.7.4-->
         <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.4/css/bulma.min.css" />
         <link rel="stylesheet" type="text/css" href="../css/hero.css">
         <link rel="stylesheet" type="text/css" href="../css/arveto_hero.css">
         <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+
+        <!-- Include here to prevent flickering on slow connections -->
+        <script src="https://unpkg.com/scrollreveal"></script>
     </head>
     <body>
 
@@ -43,7 +46,7 @@
                                         <li id="demo-hero"><a>Application démo</a></li>
                                     </ul>
                                     <span class="navbar-item">
-                                        <a class="button is-white is-outlined" href="mailto:www.arveto.softwares@gmail.com">
+                                        <a class="button is-white is-outlined" href="mailto:arveto@isty.uvsq.fr">
                                             <span class="icon">
                                                 <i class="fa fa-envelope "></i>
                                             </span>
@@ -62,7 +65,7 @@
                     La Junior Entreprise de l'ISTY
                     </h1>
                     <h2 class="subtitle">
-                    La Junior Entreprise de l'ISTY a été reformée en 2019 par un groupe d'étudiants motivés et compétents. Elle est spécialisée dans la réalisation de solutions logicielles pour les entreprises.
+                    La Junior Entreprise de l'<a class="hero-link" href="http://www.isty.uvsq.fr/">ISTY</a>, l'école d'ingénieurs de l'<a class="hero-link" href="http://www.uvsq.fr">Université de Versailles Saint-Quentin-en-Yvelines</a>, a été reformée en 2019 par un groupe d'étudiants motivés et compétents. Elle est spécialisée dans la réalisation de solutions logicielles pour les entreprises.
                     </h2>
                     <div class="has-text-centered">
                         <i class="fa fa-arrow-circle-down fa-4x clickable" id="heroScroller"></i>
@@ -103,7 +106,7 @@
                 <div class="navbar-end">
                   <div class="navbar-item">
                     <div class="buttons">
-                      <a class="button arveto-green-bg">
+                      <a class="button arveto-green-bg" href="mailto:arveto@isty.uvsq.fr">
                         <span class="icon">
                           <i class="fa fa-envelope "></i>
                         </span>
@@ -119,42 +122,45 @@
 
         <!-- CONTENT -->
 
-
+            <!-- STEPS -->
         <section class="container" id="content">
 
             <div class="title has-text-centered" id="fonctionnement-title">Comment fonctionnons-nous ?</div><br>
 
-            <div class="columns features" id="cards">
-                <div class="column is-4">
-                    <div class="card is-shady">
+            <div class="columns features cards">
+
+                <div class="column is-4" id="card1">
+                    <div class="card is-shady stage-card">
                         <div class="card-image has-text-centered">
-                            <i id="icon1" class="fa fa-pied-piper-pp"></i>
+                            <i id="icon1" class="fa fa-folder-open"></i>
                         </div>
                         <div class="card-content">
                             <div class="content paragraph">
                                 <h4>Etape 1: Devis </h4>
-                                <p>Nous appréhendons vos problématique et vous exposons nos solutions, le budget prévisionnel et le temps nécessaire à la réalisation de ce projet.</p>
+                                <p>Nous appréhendons vos problématiques et vous exposons nos solutions, le budget prévisionnel et le temps nécessaire à la réalisation de votre projet.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="column is-4">
-                    <div class="card is-shady">
+
+                <div class="column is-4"  id="card2">
+                    <div class="card is-shady stage-card">
                         <div class="card-image has-text-centered">
                             <i id="icon2" class="fa fa-cogs"></i>
                         </div>
                         <div class="card-content">
                             <div class="content paragraph">
                                 <h4>Etape 2: Lancement de l'étude</h4>
-                                <p>Nous commençons alors l'étude approfondie des solutions que nous proposons et le développement technique du projet afin de répondre le mieux possible aux attentes de nos clients.</p>
+                                <p>Nous commençons alors l'étude approfondie des solutions que nous proposons et le développement technique du projet afin de répondre le mieux possible à vos attentes.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="column is-4">
-                    <div class="card is-shady">
+
+                <div class="column is-4"  id="card3">
+                    <div class="card is-shady stage-card">
                         <div class="card-image has-text-centered">
-                            <i id="icon3" class="fa fa-graduation-cap"></i>
+                            <i id="icon3" class="fa fa-check"></i>
                         </div>
                         <div class="card-content">
                             <div class="content paragraph">
@@ -165,147 +171,186 @@
                     </div>
                 </div>
             </div>
-            <div class="intro column is-8 is-offset-2">
+
+
+                <!-- SKILLS -->
+            <div class="intro column is-8 is-offset-2"  id="skill-text">
                 <div class="title" id="competences-title">Quelles-sont nos compétences ?</div><br>
                 <p class="subtitle">Arveto Ink. est composé d'étudiants maitrisant de nombreux outils et langages informatique, permettant ainsi une grande polyvalence dans le développement des solutions logicielles.</p>
             </div>
-            <div class="sandbox">
-                <div class="tile is-ancestor">
-                    <div class="tile is-parent is-shady">
-                        <article class="tile is-child notification is-white">
-                            <p class="title"> Web	</p>
-                            <p class="subtitle_competence	" > HTML 5, CSS 3 ( Bulma, Vue Material ) , Javascript ( Vue.js, Jquery, Vanilla, Node.js, ), Go, Python, PHP</p>
-                            <img src="../images/Js_logo.png">
-                        </article>
-                    </div>
-                    <div class="tile is-parent is-shady">
-                        <article class="tile is-child notification is-white">
-                            <p class="title">Applications desktop crossplateformes</p>
-                            <p class="subtitle_competence"> Go, C, C++, Python, js ( Electron )</p>
-                            <img src="../images/Node.js_logo.png"">
-                        </article>
-                    </div>
-                    <div class="tile is-parent is-shady">
-                        <article class="tile is-child notification is-white">
-                            <p class="title">Applications mobiles crossplateformes</p>
-                            <p class="subtitle_competence">Go, Java, Cordova, Nativescript </p>
-                            <img src="../images/C++_logo.png"">
-                            <div class="content">
+            <div class="columns features cards">
 
+                <div class="column is-4" id="skill1">
+                    <div class="card is-shady stage-card">
+
+                        <div class="card-content">
+                            <div class="content paragraph" id="skill-description">
+                                <h4>Web</h4>
+                                <p>HTML5, CSS3 (Bulma, Vue Material), Javascript (Vanilla, Vue.js, JQuery, Node.js), Go, Python, PHP</p>
                             </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="tile is-ancestor">
-                    <div class="tile is-vertical is-8">
-                        <div class="tile">
-                            <div class="tile is-parent is-vertical">
-                                                      </div>
-                    </div>
+                            <div class="has-text-centered">
+                                <img src="../images/js_logo.png" class="skill-image" alt="JS">
+                            </div>
 
-
-                        </article>
+                        </div>
                     </div>
                 </div>
 
-                <div class="title has-text-centered" id="equipe-title">Notre équipe</div><br>
+                <div class="column is-4"  id="skill2">
+                    <div class="card is-shady stage-card">
 
-                <div class="tile is-ancestor">
-                    <div class="tile is-parent is-shady">
-                        <article class="tile is-child notification is-white">
-                            <p class="title">Olivier Benaben</p>
-                            <p class="subtitle">Vice-président et fondateur d'Arveto Ink.</p>
-                            <div class="content">
-                              <img src="../images/Olivier_Benaben.jpg" class="photo">
+                        <div class="card-content">
+                            <div class="content paragraph skill-description">
+                                <h4>Applications de bureau cross-platform</h4>
+                                <p>Go, C, C++, Python, JS (Electron)</p>
                             </div>
-                        </article>
-                    </div>
-                    <div class="tile is-parent is-8 is-shady">
-                        <article class="tile is-child notification is-white">
-                            <p class="title">Aurélien Delval</p>
-                            <p class="subtitle">Président et fondateur d'Arveto Ink.</p>
-                            <div class="content">
-                               <p class="citation"><img src="../images/Aurelien_Delval.jpg" class="photo">	"Vené svp on a grave besoin de tune"</p>
+                            <div class="has-text-centered">
+                                <img src="../images/desktop.png" class="skill-image" alt="Desktop">
                             </div>
-                        </article>
+
+                        </div>
                     </div>
                 </div>
-                <div class="tile is-ancestor">
-                    <div class="tile is-parent is-8 is-shady">
-                        <article class="tile is-child notification is-white">
-                            <p class="title">Hugo Henrotte</p>
-                            <p class="subtitle">Trésorier et fondateur d'Arveto Ink.</p>
-                            <div class="content">
-                              <p class="citation">  <img src="../images/Hugo_Henrotte.jpg" class="photo"> “Super !”</p>
+
+                <div class="column is-4"  id="skill3">
+                    <div class="card is-shady stage-card">
+
+                        <div class="card-content">
+                            <div class="content paragraph skill-description">
+                                <h4>Applications mobiles cross-platform</h4>
+                                <p>Go, Java, Cordova, Nativescript</p>
                             </div>
-                        </article>
-                    </div>
-                    <div class="tile is-parent is-shady">
-                        <article class="tile is-child notification is-white">
-                            <p class="title">Guillaume Montfort</p>
-                            <p class="subtitle">Secrétaire général et fondateur d'Arveto Ink.</p>
-                            <div class="content">
-                               <img src="../images/Guillaume_Montfort.jpg">
+                            <div class="has-text-centered">
+                                <img src="../images/mobile.png" class="skill-image" alt="Mobile">
                             </div>
-                        </article>
+
+                        </div>
                     </div>
                 </div>
+
             </div>
+
+
+
+            <!-- TEAM -->
+
+            <div class="intro column  is-8 is-offset-2" id="team-intro">
+                <div class="title has-text-centered" id="equipe-title">Notre équipe</div><br>
+                <p class="subtitle">Récompensée par <a href="https://www.altran.com/fr/fr/">Altran</a> et <a href="https://www.smile.eu/fr">Smile</a> lors du dernier hackathon de la <a href="https://www.nuitdelinfo.com/">Nuit de l'Info</a>,
+                    l'équipe d'Arveto Ink. est composée d'étudiants de l'ISTY. Voici les membres de son bureau :
+                </p>
+            </div>
+
+
+            <div class="sandbox" id="team-sandbox">
+
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent is-shady" id="team-member1">
+                        <article class="tile is-child notification is-white has-text-centered">
+                            <p class="title">Olivier Benaben</p>
+                            <p class="subtitle">Fondateur et vice-président d'Arveto Ink.</p>
+                            <div class="content has-text-centered portrait-container">
+                                <img src="../images/Olivier_Benaben.jpg" class="portrait" alt="Olivier Benaben"></img>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="tile is-parent is-7 is-shady" id="team-member2">
+                        <article class="tile is-child notification is-white">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content has-text-centered portrait-container">
+                                    <img src="../images/Aurelien_Delval.jpg" class="portrait" alt="Aurélien Delval"></img>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <p class="title">Aurélien Delval</p>
+                                <p class="subtitle">Fondateur et président d'Arveto Ink.</p>
+                            </div>
+                        </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent is-7 is-shady" id="team-member3">
+                        <article class="tile is-child notification is-white has-text-right">
+                        <div class="columns">
+                            <div class="column">
+                                <p class="title">Hugo Henrotte</p>
+                                <p class="subtitle">Fondateur et trésorier d'Arveto Ink.</p>
+                            </div>
+                            <div class="column">
+                                <div class="content has-text-centered portrait-container">
+                                    <img src="../images/Hugo_Henrotte.jpg" class="portrait" alt="Hugo Henrotte"></img>
+                                </div>
+                            </div>
+                        </div>
+                        </article>
+                    </div>
+                    <div class="tile is-parent is-shady" id="team-member4">
+                        <article class="tile is-child notification is-white has-text-centered">
+                            <p class="title">Guillaume Montfort</p>
+                            <p class="subtitle">Fondateur et secrétaire général d'Arveto Ink.</p>
+                            <div class="content has-text-centered portrait-container">
+                                <img src="../images/Guillaume_Montfort.jpg" class="portrait" alt="Guillaume Montfort"></img>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+</div>
+
+
         </section>
 
 
         <!--FOOTER-->
 
-        <footer class="footer" id="footer">
-            <div class="container has-text-centered">
-
-
-                <h2>
-
-                   <h3 class="coordonnees"> Coordonnées :</h3>
-                   <p> 10 rue Paul Dautier</br>
-                   	Vélizy-Villacoublay, 78140
-                    </br>
-                    arveto.softwares@gmail.com
-                </p>
-                </br>
-            </h2>
-                    <strong id="links">Retrouvez-nous aussi aux liens suivants:</strong>
-
-
-                <div class="content has-text-centered">
-
-                    <div class="columns">
-                        <div class="column is-3 is-offset-3">
-                            <a class="icon" href="https://twitter.com/ArvetoSoftwares">
-                                <i class="fa fa-twitter fa-2x footer-icon"></i>
-                            </a>
-                        </div>
-                        <div class="column is-3 is-offset 6">
-                            <a class="icon" href="https://github.com/Arveto">
-                                <i class="fa fa-github fa-2x footer-icon"></i>
-                            </a>
-                        </div>
-                    </div>
-
-
-
-
-
+        <footer class="footer has-text-centered" id="footer">
+            <div class="columns">
+                <div class="column">
+                    <h6 class="title is-6 footer-title"> Coordonnées :</h6>
+                    <p>
+                        10 rue Paul Dautier</br>
+                        Vélizy-Villacoublay, 78140</br>
+                        arveto@isty.uvsq.fr
+                    </p>
                 </div>
 
-                <p id="legal">
+                <div class="column">
+                    <p>
+                        Arveto Ink. est une association loi 1901 parue au Journal Officiel et bénéficiant du label Junior Création
+                    </p>
+                </div>
 
-                    </br>
-                    ©Copyraaiiight 2019 Arveto Ink. Tout droits réservés
-                </p>
+                <div class="column">
+                    <h6 class="title is-6 footer-title"> Retrouvez-nous aux liens suivants:</h6>
+                    <p>
+                        <div class="columns">
+                            <div class="column is-1 is-offset-5">
+                                <a class="icon" href="https://twitter.com/ArvetoSoftwares">
+                                    <i class="fab fa-twitter-square fa-2x footer-icon"></i>
+                                </a>
+                            </div>
+                            <div class="column is-1">
+                                <a class="icon" href="https://github.com/Arveto">
+                                    <i class="fab fa-github-square fa-2x footer-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        Téléchargez notre <a href="" class="arveto-green">Kit Presse</a>
+                    </p>
 
-            <script
-			  src="http://code.jquery.com/jquery-3.3.1.min.js"
-			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			  crossorigin="anonymous"></script>
-            <script src="../js/bulma.js"></script>
-            <script src="../js/arveto_hero.js"></script>
+            </div>
         </footer>
     </body>
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="../js/bulma.js"></script>
+
+    <script src="../js/arveto_hero.js"></script>
+
 </html>

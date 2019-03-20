@@ -1,5 +1,6 @@
 /* Replacement colors */
 
+
 :root{
     --arveto-green: #85a727;
 }
@@ -29,6 +30,11 @@
     color: white;
 }
 
+a{
+    color: var(--arveto-green);
+}
+
+
 
 /*Hero*/
 
@@ -38,7 +44,7 @@
 }
 
 #header{
-    z-index: 1;
+    z-index: 3;
     padding: 5px;
 }
 
@@ -46,6 +52,13 @@
     cursor: pointer;
 }
 
+.hero-link{
+    text-decoration: underline;
+}
+
+.hero-link:hover{
+    color: var(--arveto-green) !important;
+}
 
 /*Header*/
 
@@ -60,8 +73,9 @@
 }
 
 
-/*Content*/
+    /*Content*/
 
+/* Fonctionnement */
 #fonctionnement-title, #competences-title, #equipe-title{
     font-size: : 36px;
     padding-top: 40px;
@@ -69,15 +83,19 @@
 }
 
 #icon1{
-    color: #084c61;
+    color: #f4cd55;
 }
 
 #icon2{
-    color: #084c61;
+    color: #666666;
 }
 
 #icon3{
-    color: #084c61;
+    color: #3b8e1b;
+}
+
+.stage-card{
+    min-height: 525px;
 }
 
 .paragraph{
@@ -88,8 +106,52 @@
     margin-top: 57px;
 }
 
-#cards{
+
+/* Skills */
+
+#skill-text{
+    padding-top: 40px;
+    padding-bottom: 0px;
+}
+
+.skill-description{
+    min-height: 109px;
+}
+
+.skill-image{
+    max-width: 220px;
+    max-height: 270px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+/* Team */
+
+.portrait-container{
+    margin-top: 0px;
+}
+
+.portrait{
+    border-radius: 50%;
+
+    width: auto;
+    height: auto;
+
+    max-width: 170px;
+    max-height: 170px;
+}
+
+.cards{
     padding: 40px;
+}
+
+#team-intro{
+    padding-bottom: 0px;
+}
+
+#team-sandbox{
+    padding-top: 40px;
 }
 
 #equipe-title{
@@ -97,9 +159,11 @@
 }
 
 
+    /* Footer */
+
 #footer{
     color: white;
-    background: linear-gradient(135deg, #343434, #262626);;
+    background: #343434;
     -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
     -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
     box-shadow: 0px 0px 10px rgba(0,0,0,.8);
@@ -111,6 +175,10 @@
 
 
 #links{
+    color: white;
+}
+
+.footer-title{
     color: white;
 }
 

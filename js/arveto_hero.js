@@ -94,7 +94,23 @@ $("#equipe-header").click( () => {
 });
 
 
-	//TODO Responsive menu for navbar burger
-$("#navbarBurger").click( () => {
-	console.log("TODO")
-});
+
+	//Scroll reveal effect
+ScrollReveal({ reset: true });
+
+//Steps
+ScrollReveal().reveal('#card1', { delay: 400 });
+ScrollReveal().reveal('#card2', { delay: 800 });
+ScrollReveal().reveal('#card3', { delay: 1200 });
+
+
+//Skills
+ScrollReveal().reveal('#skill1', { delay: 800 });
+ScrollReveal().reveal('#skill2', { delay: 400 });
+ScrollReveal().reveal('#skill3', { delay: 900 });
+
+//Team
+ScrollReveal().reveal('#team-member1', { delay: 400 });
+ScrollReveal().reveal('#team-member2', { delay: 600 });
+ScrollReveal().reveal('#team-member4', { delay: 800 });
+ScrollReveal().reveal('#team-member3', { delay: 1000 });
