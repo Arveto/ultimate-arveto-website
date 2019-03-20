@@ -99,18 +99,18 @@ $("#equipe-header").click( () => {
 ScrollReveal({ reset: true });
 
 //Steps
-ScrollReveal().reveal('#card1', { delay: 400 });
-ScrollReveal().reveal('#card2', { delay: 800 });
-ScrollReveal().reveal('#card3', { delay: 1200 });
+ScrollReveal().reveal('#card1', { delay: 200 });
+ScrollReveal().reveal('#card2', { delay: 350 });
+ScrollReveal().reveal('#card3', { delay: 500 });
 
 
 //Skills
-ScrollReveal().reveal('#skill1', { delay: 800 });
-ScrollReveal().reveal('#skill2', { delay: 400 });
-ScrollReveal().reveal('#skill3', { delay: 900 });
+ScrollReveal().reveal('#skill1', { delay: 400 });
+ScrollReveal().reveal('#skill2', { delay: 200 });
+ScrollReveal().reveal('#skill3', { delay: 500 });
 
 //Team
-ScrollReveal().reveal('#team-member1', { delay: 400 });
-ScrollReveal().reveal('#team-member2', { delay: 600 });
-ScrollReveal().reveal('#team-member4', { delay: 800 });
-ScrollReveal().reveal('#team-member3', { delay: 1000 });
+ScrollReveal().reveal('#team-member1', { delay: 200 });
+ScrollReveal().reveal('#team-member2', { delay: 350 });
+ScrollReveal().reveal('#team-member4', { delay: 500 });
+ScrollReveal().reveal('#team-member3', { delay: 650 });
