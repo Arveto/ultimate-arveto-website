@@ -1,0 +1,22 @@
+{
+  "name": "ultimate-arveto-website",
+  "version": "1.0.0",
+  "description": "A website designed to attract potential investors and business angels in order to generate a massive amount of cash.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arveto/ultimate-arveto-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arveto/ultimate-arveto-website/issues"
+  },
+  "homepage": "https://github.com/Arveto/ultimate-arveto-website#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
