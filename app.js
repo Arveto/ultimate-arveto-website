@@ -14,4 +14,4 @@ app.get('/app', (req, res) => {
     res.sendFile(__dirname + '/public/app.html');
 });
 
-server.listen(8080);
+server.listen(80);
