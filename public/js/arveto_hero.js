@@ -60,7 +60,6 @@ $("#fonctionnement-hero").click( () => {
 	}, 800);
 });
 $("#fonctionnement-header").click( () => {
-	console.log("Yoooo")
 	$([document.documentElement, document.body]).animate({
 		scrollTop: $("#fonctionnement-title").offset().top - 80
 	}, 800);
@@ -80,7 +79,7 @@ $("#competences-header").click( () => {
 });
 
 
-//Competences
+//Equipe
 $("#equipe-hero").click( () => {
 	$([document.documentElement, document.body]).animate({
 		scrollTop: $("#equipe-title").offset().top - 80
@@ -90,6 +89,20 @@ $("#equipe-header").click( () => {
 	console.log("Yoooo")
 	$([document.documentElement, document.body]).animate({
 		scrollTop: $("#equipe-title").offset().top - 80
+	}, 800);
+});
+
+
+//Demo App
+$("#demo-hero").click( () => {
+	$([document.documentElement, document.body]).animate({
+		scrollTop: $("#demoapp").offset().top - 80
+	}, 800);
+});
+$("#demo-header").click( () => {
+	console.log("Yoooo")
+	$([document.documentElement, document.body]).animate({
+		scrollTop: $("#demoapp").offset().top - 80
 	}, 800);
 });
 
