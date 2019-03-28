@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,6 +21,12 @@
     </head>
     <body>
 
+      <style media="screen">
+        .en{
+          display: none;
+          visibility: hidden;
+        }
+      </style>
         <!-- HERO -->
 
         <section class="hero is-info is-medium is-bold is-fullheight arveto-green-bg" id="hero">
@@ -39,18 +47,41 @@
                             <div class="navbar-end">
                                 <div class="tabs is-right">
                                     <ul>
-                                        <li class="is-active"><a class="arveto-green-active">Accueil</a></li>
-                                        <li id="fonctionnement-hero"><a>Fonctionnement</a></li>
-                                        <li id="competences-hero"><a>Nos compétences</a></li>
-                                        <li id="demo-hero"><a>Application démo</a></li>
-                                        <li id="equipe-hero"><a>Notre équipe</a></li>
+                                        <li class="is-active">
+                                          <a class="arveto-green-active fr">Accueil</a>
+                                          <a class="arveto-green-active en">Home</a>
+                                        </li>
+                                        <li id="fonctionnement-hero">
+                                          <a class="fr">Fonctionnement</a>
+                                          <a class="en">Functionning</a>
+                                        </li>
+                                        <li id="competences-hero">
+                                          <a class="fr">Nos compétences</a>
+                                          <a class="en">Our skills</a>
+                                        </li>
+                                        <li id="equipe-hero">
+                                          <a class="fr">Notre équipe</a>
+                                          <a class="en">Our team</a>
+                                        </li>
+                                        <li id="demo-hero">
+                                          <a class="fr">Application démo</a>
+                                          <a class="en">Demo application</a>
+                                        </li>
                                     </ul>
                                     <span class="navbar-item">
                                         <a class="button is-white is-outlined" href="mailto:arveto@isty.uvsq.fr">
                                             <span class="icon">
-                                                <i class="fa fa-envelope "></i>
+                                                <i class="fa fa-envelope"></i>
                                             </span>
-                                            <span title="Hello from the other side">Nous contacter</span>
+                                            <span title="Hello from the other side" class="fr">Nous contacter</span>
+                                            <span title="Hello from the other side" class="en">Contact us </span>
+                                        </a>
+                                    </span>
+                                    <span class="navbar-item">
+                                        <a class="button is-white is-outlined" id="translate">
+                                            <span class="icon">
+                                                <i class="fa fa-globe-europe "></i>
+                                            </span>
                                         </a>
                                     </span>
                                 </div>
@@ -61,11 +92,17 @@
             </div>
             <div class="hero-body">
                 <div class="container has-text-centered">
-                    <h1 class="title">
+                    <h1 class="title fr">
                     La Junior Entreprise de l'ISTY
                     </h1>
-                    <h2 class="subtitle">
+                    <h1 class="title en">
+                    The ISTY's Junior Company
+                    </h1>
+                    <h2 class="subtitle fr">
                     La Junior Entreprise de l'<a class="hero-link" href="http://www.isty.uvsq.fr/">ISTY</a>, l'école d'ingénieurs de l'<a class="hero-link" href="http://www.uvsq.fr">Université de Versailles Saint-Quentin-en-Yvelines</a>, a été reformée en 2019 par un groupe d'étudiants motivés et compétents. Elle est spécialisée dans la réalisation de solutions logicielles pour les entreprises.
+                    </h2>
+                    <h2 class="subtitle en">
+                    It is the Junior Company of <a class="hero-link" href="http://www.isty.uvsq.fr/">ISTY</a>, an engineering school in the <a class="hero-link" href="http://www.uvsq.fr">Versailles Saint-Quentin-en-Yvelines University</a>. Arveto Ink. was formed in 2019 by a group of motivated and competent students. It is specialized in the realization of software solutions for companies.
                     </h2>
                     <div class="has-text-centered">
                         <i class="fa fa-arrow-circle-down fa-4x clickable" id="heroScroller"></i>
@@ -95,11 +132,26 @@
               <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
 
-                  <a class="navbar-item arveto-green-hover" id="accueil-header">Accueil</a>
-                  <a class="navbar-item arveto-green-hover" id="fonctionnement-header">Fonctionnement</a>
-                  <a class="navbar-item arveto-green-hover" id="competences-header">Nos compétences</a>
-                  <a class="navbar-item arveto-green-hover" id="demo-header">Application démo</a>
-                  <a class="navbar-item arveto-green-hover" id="equipe-header">Notre équipe</a>
+                  <a class="navbar-item arveto-green-hover" id="accueil-header">
+                    <div class="fr">Accueil</div>
+                    <div class="en">Home</div>
+                  </a>
+                  <a class="navbar-item arveto-green-hover" id="fonctionnement-header">
+                    <div class="fr">Fonctionnement</div>
+                    <div class="en">Functioning</div>
+                  </a>
+                  <a class="navbar-item arveto-green-hover" id="competences-header">
+                    <div class="fr">Nos compétences</div>
+                    <div class="en">Our Skills</div>
+                  </a>
+                  <a class="navbar-item arveto-green-hover" id="equipe-header">
+                    <div class="fr">Notre équipe</div>
+                    <div class="en">Our team</div>
+                  </a>
+                  <a class="navbar-item arveto-green-hover" id="demo-header">
+                    <div class="fr">Application démo</div>
+                    <div class="en">Demo application</div>
+                  </a>
 
                 </div>
 
@@ -110,7 +162,8 @@
                         <span class="icon">
                           <i class="fa fa-envelope "></i>
                         </span>
-                        <strong>Nous contacter</strong>
+                        <strong class="fr">Nous contacter</strong>
+                        <strong class="en">Contact us</strong>
                       </a>
                     </div>
                   </div>
@@ -124,8 +177,9 @@
 
             <!-- STEPS -->
         <section class="container" id="content">
-
-            <div class="title has-text-centered" id="fonctionnement-title">Comment fonctionnons-nous ?</div><br>
+            <div id="fonctionnement-title"></div>
+            <div class="title has-text-centered fr">Comment fonctionnons-nous ?</div>
+            <div class="title has-text-centered en">How do we work?</div><br>
 
             <div class="columns features cards">
 
@@ -136,8 +190,11 @@
                         </div>
                         <div class="card-content">
                             <div class="content paragraph">
-                                <h4>Etape 1: Devis </h4>
-                                <p>Nous appréhendons vos problématiques et vous exposons nos solutions, le budget prévisionnel et le temps nécessaire à la réalisation de votre projet.</p>
+                                <h4 class="fr">Etape 1: Devis </h4>
+                                <p class="en">We understand your problems and explain our solutions, the estimated budget and the time required to complete your project.</p>
+
+                                <h4 class="en">Step 1: Quotation </h4>
+                                <p class="fr">Nous appréhendons vos problématiques et vous exposons nos solutions, le budget prévisionnel et le temps nécessaire à la réalisation de votre projet.</p>
                             </div>
                         </div>
                     </div>
@@ -150,8 +207,11 @@
                         </div>
                         <div class="card-content">
                             <div class="content paragraph">
-                                <h4>Etape 2: Lancement de l'étude</h4>
-                                <p>Nous commençons alors l'étude approfondie des solutions que nous proposons et le développement technique du projet afin de répondre le mieux possible à vos attentes.</p>
+                               <h4 class="en">Step 2: Launch of the study</h4>
+                                <p class="en">We then begin the in-depth study of the solutions we propose and the technical development of the project in order to best meet your expectations.</p>
+
+                                <h4 class="fr">Etape 2: Lancement de l'étude</h4>
+                                <p class="fr">Nous commençons alors l'étude approfondie des solutions que nous proposons et le développement technique du projet afin de répondre le mieux possible à vos attentes.</p>
                             </div>
                         </div>
                     </div>
@@ -164,8 +224,11 @@
                         </div>
                         <div class="card-content">
                             <div class="content paragraph">
-                                <h4>Etape 3: Rendu du projet </h4>
-                                <p>Nous rendons le projet terminé dans les délais et les conditions prévus dès le devis et nous assurons son installation ainsi que le suivi de son fonctionnement.</p>
+                                <h4 class="fr">Etape 3: Rendu du projet </h4>
+                                <p class="fr">Nous rendons le projet terminé dans les délais et les conditions prévus dès le devis et nous assurons son installation ainsi que le suivi de son fonctionnement.</p>
+
+                                <h4 class="en">Step 3: Rendering the project </h4>
+                                <p class="en">We return the completed project within the deadlines and under the conditions specified in the quotation and ensure its installation and monitoring of its operation.</p>
                             </div>
                         </div>
                     </div>
@@ -175,8 +238,12 @@
 
                 <!-- SKILLS -->
             <div class="intro column is-8 is-offset-2"  id="skill-text">
-                <div class="title" id="competences-title">Quelles-sont nos compétences ?</div><br>
-                <p class="subtitle">Arveto Ink. est composé d'étudiants maitrisant de nombreux outils et langages informatique, permettant ainsi une grande polyvalence dans le développement des solutions logicielles.</p>
+                <div id="competences-title"></div>
+                <div class="title fr">Quelles-sont nos compétences ?</div>
+                <p class="subtitle fr">Arveto Ink. est composé d'étudiants maitrisant de nombreux outils et langages informatique, permettant ainsi une grande polyvalence dans le développement des solutions logicielles.</p>
+
+                <div class="title en">What are our skills?</div><br>
+                <p class="subtitle en">Arveto Ink. is composed of students who master many tools and computer languages, thus allowing a great versatility in the development of software solutions.</p>
             </div>
             <div class="columns features cards">
 
@@ -201,7 +268,8 @@
 
                         <div class="card-content">
                             <div class="content paragraph skill-description">
-                                <h4>Applications de bureau cross-platform</h4>
+                                <h4 class="fr">Applications de bureau cross-platform</h4>
+                                <h4 class="en">Cross-platform desktop applications</h4>
                                 <p>Go, C, C++, Python, JS (Electron)</p>
                             </div>
                             <div class="has-text-centered">
@@ -217,8 +285,9 @@
 
                         <div class="card-content">
                             <div class="content paragraph skill-description">
-                                <h4>Applications mobiles cross-platform</h4>
-                                <p>Go, Java, Cordova, Nativescript</p>
+                              <h4 class="fr">Applications mobiles multiplateformes</h4>
+                              <h4 class="en">Applications mobiles cross-platform</h4>
+                              <p>Go, Java, Cordova, Nativescript</p>
                             </div>
                             <div class="has-text-centered">
                                 <img src="../images/mobile.png" class="skill-image" alt="Mobile">
@@ -233,13 +302,17 @@
 
             <div class="columns" id="demoapp">
               <div class="demoapp_legend column is-7">
-                <div class="title has-text-centered">Un exemple de nos compétences :</div>
-                <p class="subtitle has-text-centered">
+                <div class="title has-text-centered fr">Un exemple de nos compétences :</div>
+                  <div class="title has-text-centered en">An example of our skills:</div>
+                <p class="subtitle has-text-centered fr">
                   Nous sommes capables de réaliser des applications mobiles disponibles sur iOS, Android, WindowsPhone, etc..
+                </p>
+                     <p class="subtitle has-text-centered en">
+                  We are able to create mobile applications available on iOS, Android, WindowsPhone, etc...
                 </p>
               </div>
 
-              <div class="demoapp column has-text-centered">
+              <div class="demoapp column">
                 <iframe src="/app" frameborder="0"></iframe>
               </div>
             </div>
@@ -254,11 +327,16 @@
 
 
             <!-- TEAM -->
-
+            <div id="equipe-title"></div>
             <div class="intro column  is-8 is-offset-2" id="team-intro">
-                <div class="title has-text-centered" id="equipe-title">Notre équipe</div><br>
-                <p class="subtitle">Récompensée par <a href="https://www.altran.com/fr/fr/">Altran</a> et <a href="https://www.smile.eu/fr">Smile</a> lors du dernier hackathon de la <a href="https://www.nuitdelinfo.com/">Nuit de l'Info</a>,
+                <div class="title has-text-centered fr">Notre équipe</div><br>
+                <p class="subtitle fr">Récompensée par <a href="https://www.altran.com/fr/fr/">Altran</a> et <a href="https://www.smile.eu/fr">Smile</a> lors du dernier hackathon de la <a href="https://www.nuitdelinfo.com/">Nuit de l'Info</a>,
                     l'équipe d'Arveto Ink. est composée d'étudiants de l'ISTY. Voici les membres de son bureau :
+                </p>
+
+                <div class="title has-text-centered en">Our Team</div><br>
+                <p class="subtitle en">Awarded by <a href="https://www.altran.com/fr/fr/">Altran</a> and <a href="https://www.smile.eu/fr">Smile</a> during the last hackathon of the <a href="https://www.nuitdelinfo.com/">Nuit de l'Info</a>,
+                    Arveto Ink's team is composed of students from ISTY. These are the members of his office:
                 </p>
             </div>
 
@@ -269,7 +347,8 @@
                     <div class="tile is-parent is-shady" id="team-member1">
                         <article class="tile is-child notification is-white has-text-centered">
                             <p class="title">Olivier Benaben</p>
-                            <p class="subtitle">Fondateur et vice-président d'Arveto Ink.</p>
+                            <p class="subtitle fr">Fondateur et vice-président d'Arveto Ink.</p>
+                             <p class="subtitle en">Founder and vice president of Arveto Ink.</p>
                             <div class="content has-text-centered portrait-container">
                                 <img src="../images/Olivier_Benaben.jpg" class="portrait" alt="Olivier Benaben"></img>
                             </div>
@@ -286,7 +365,8 @@
                             </div>
                             <div class="column">
                                 <p class="title">Aurélien Delval</p>
-                                <p class="subtitle">Fondateur et président d'Arveto Ink.</p>
+                                <p class="subtitle fr">Fondateur et président d'Arveto Ink.</p>
+                                <p class="subtitle en">Founder and président of Arveto Ink.</p>
                             </div>
                         </div>
                         </article>
@@ -299,7 +379,8 @@
                         <div class="columns">
                             <div class="column">
                                 <p class="title">Hugo Henrotte</p>
-                                <p class="subtitle">Fondateur et trésorier d'Arveto Ink.</p>
+                                <p class="subtitle fr">Fondateur et trésorier d'Arveto Ink.</p>
+                                <p class="subtitle en">Founder and treasurer of Arveto Ink.</p>
                             </div>
                             <div class="column">
                                 <div class="content has-text-centered portrait-container">
@@ -312,7 +393,8 @@
                     <div class="tile is-parent is-shady" id="team-member4">
                         <article class="tile is-child notification is-white has-text-centered">
                             <p class="title">Guillaume Montfort</p>
-                            <p class="subtitle">Fondateur et secrétaire général d'Arveto Ink.</p>
+                            <p class="subtitle fr">Fondateur et secrétaire général d'Arveto Ink.</p>
+                            <p class="subtitle en">Founder and General Secretary of Arveto Ink.</p>
                             <div class="content has-text-centered portrait-container">
                                 <img src="../images/Guillaume_Montfort.jpg" class="portrait" alt="Guillaume Montfort"></img>
                             </div>
@@ -330,7 +412,8 @@
         <footer class="footer has-text-centered" id="footer">
             <div class="columns">
                 <div class="column">
-                    <h6 class="title is-6 footer-title"> Coordonnées :</h6>
+                    <h6 class="title is-6 footer-title fr"> Coordonnées :</h6>
+                    <h6 class="title is-6 footer-title en"> Contact informations :</h6>
                     <p>
                         10 rue Paul Dautier</br>
                         Vélizy-Villacoublay, 78140</br>
@@ -339,8 +422,12 @@
                 </div>
 
                 <div class="column">
-                    <p>
+                    <p class="fr">
                         Arveto Ink. est une association loi 1901 parue au Journal Officiel et bénéficiant du label Junior Création
+                    </p>
+
+                    <p class="en">
+                        Arveto Ink. is an association under the 1901 franch law published in the Official Journal and benefiting from the Junior Création label
                     </p>
                 </div>
 
@@ -359,7 +446,7 @@
                                 </a>
                             </div>
                         </div>
-                        Téléchargez notre <a href="" class="arveto-green">Kit Presse</a>
+                        <!-- Téléchargez notre <a href="" class="arveto-green">Kit Presse</a> -->
                     </p>
 
             </div>
@@ -369,8 +456,10 @@
     <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous">
+    </script>
     <script src="../js/bulma.js"></script>
+    <script src="../js/index.js"></script>
 
     <script src="../js/arveto_hero.js"></script>
 
