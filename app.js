@@ -1,6 +1,14 @@
 const app = require('express')();
-const server = require("http").createServer(app);
+const http = require("http");
+const https = require('https');
 const path = require('path');
+
+const fs = require('fs');
+
+let options = {
+	key: fs.readFileSync('/etc/letsencrypt/live/arveto.io/privkey.pem', 'utf8'),
+	cert: fs.readFileSync('/etc/letsencrypt/live/arveto.io/fullchain.pem', 'utf8'),
+}
 
 /******************************************************************************/
 
@@ -14,4 +22,9 @@ app.get('/app', (req, res) => {
     res.sendFile(__dirname + '/public/app.html');
 });
 
-server.listen(80);
+https.createServer(options, app).listen(443);
+
+http.createServer(function (req, res) {
+	res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
+	res.end();
+}).listen(80);
