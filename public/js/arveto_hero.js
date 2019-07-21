@@ -65,6 +65,18 @@ $("#fonctionnement-header").click( () => {
 	}, 800);
 });
 
+//CNJE
+$("#cnje-hero").click( () => {
+	$([document.documentElement, document.body]).animate({
+		scrollTop: $("#cnje-title").offset().top - 80
+	}, 800);
+});
+$("#cnje-header").click( () => {
+	$([document.documentElement, document.body]).animate({
+		scrollTop: $("#cnje-title").offset().top - 80
+	}, 800);
+});
+
 //Competences
 $("#competences-hero").click( () => {
 	$([document.documentElement, document.body]).animate({
@@ -116,6 +128,8 @@ ScrollReveal().reveal('#card1', { delay: 200 });
 ScrollReveal().reveal('#card2', { delay: 350 });
 ScrollReveal().reveal('#card3', { delay: 500 });
 
+//CNJE
+ScrollReveal().reveal('#cnje_panel', { delay: 200 });
 
 //Skills
 ScrollReveal().reveal('#skill1', { delay: 400 });
