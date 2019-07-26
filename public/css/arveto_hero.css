@@ -68,6 +68,37 @@ a{
     color: var(--arveto-green) !important;
 }
 
+
+.animated {
+    animation: shake 8s cubic-bezier(.36,.07,.19,.97) both;
+    animation-iteration-count: infinite;
+-webkit-animation-iteration-count: infinite;
+-moz-animation-iteration-count: infinite;
+-o-animation-iteration-count: infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+  1%, 9% {
+    transform: translate3d(0, -1px, 0);
+  }
+
+  2%, 8% {
+    transform: translate3d(0, 2px, 0);
+  }
+
+  3%, 5%, 7% {
+      transform: translate3d(0, -3px, 0);
+  }
+
+  4%, 6% {
+    transform: translate3d(0, 2px, 0);
+  }
+}
+
+
 /*Header*/
 
 .fixed {
