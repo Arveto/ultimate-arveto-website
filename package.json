@@ -4,6 +4,8 @@
   "description": "A website designed to attract potential investors and business angels in order to generate a massive amount of cash.",
   "main": "app.js",
   "scripts": {
+    "dev": "node dev_app.js",
+    "prod": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
