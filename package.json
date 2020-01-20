@@ -19,6 +19,10 @@
   },
   "homepage": "https://github.com/Arveto/ultimate-arveto-website#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mysql": "^2.17.1",
+    "socket.io": "^2.3.0"
   }
 }
